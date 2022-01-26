@@ -29,7 +29,7 @@ function citySearch(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-input");
     let city = searchInput.value;
-    let apiKey = "cddc96904d3de11c1e3219f906f672dd";
+    let apiKey = "";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
     let displayCity = document.querySelector("#head-three");
     displayCity.innerHTML = searchInput.value;
@@ -62,7 +62,7 @@ function dataDisplay(response) {
 function positionTrigger(position) {
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
-    let apiKey = "cddc96904d3de11c1e3219f906f672dd";
+    let apiKey = "";
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${apiKey}`;
 
     // using axios for api call. passing in anon function
