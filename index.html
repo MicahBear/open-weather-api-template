@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Simple Weather</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5 border-class main-div">
+      <p id="time-top"></p>
+      <h3 class="mainTitle">Simple Weather</h3>
+      <form action="" id="search-form">
+        <div class="row">
+          <div class="col-md-4 search-bar">
+            <input
+              type="text"
+              class="form-control"
+              id="search-input"
+              placeholder="Enter a City"
+              autocomplete="off"
+              autofocus="on"
+            />
+          </div>
+          <div class="col-md-4 bg-transparent text-right blue-green-buttons">
+            <input type="submit" value="Search" class="btn btn-lg btn-info" />
+
+            <input
+              id="current"
+              type="submit"
+              value="Current"
+              class="btn btn-lg btn-success"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="weather-info">
+        <h3 id="head-three"></h3>
+        <p></p>
+        <span id="currentTemp"></span>
+        <br />
+        <span id="weatherDescription"></span>
+
+        <br />
+        <!-- <span class="precipitation">Precipitation:95%</span>
+        <br />
+        <span class="wind">Wind: 15mph</span> -->
+      </div>
+      <div class="group">
+        <div class="row">
+          <div class="col-2">
+            Thur<br />
+            ☀ <br />12
+          </div>
+          <div class="col-2">
+            Fri<br />
+            ☀ <br />
+            12
+          </div>
+          <div class="col-2">
+            Sat<br />
+            ☀<br />
+            12
+          </div>
+          <div class="col-2">
+            Sun<br />
+            ☀<br />
+            12
+          </div>
+          <div class="col-2">
+            Mon <br />☀<br />
+            12
+          </div>
+        </div>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
