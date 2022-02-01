@@ -19,24 +19,30 @@
     <div class="container">
       <div class="container">
         <div class="shadow-sm p-3 mb-5 bg-body rounded">
-          <div class="input-group mb-3">
-            <!-- added in lg after form control to shorten input field -->
-            <input
-              type="text"
-              class="form-control-lg"
-              placeholder="Enter City"
-              aria-describedby="button-addon2"
-            />
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              id="button-addon2"
-            >
-              Search
-            </button>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group mb-3">
+                <!-- added in lg after form control to shorten input field -->
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter City"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="display-city">Long Beach, Ca</h4>
+            </div>
           </div>
           <h1 class="display-temp">36</h1>
-          <h4 class="display-city">Long Beach, Ca</h4>
           <p class="day-time">Monday 9:00pm</p>
           <p class="weather-description">Cloudy with a chance of meatballs</p>
           <div class="container weather">
