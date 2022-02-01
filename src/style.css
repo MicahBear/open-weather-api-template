@@ -1,3 +1,21 @@
 h1 {
   color: #135513;
+  text-align: right;
+}
+.display-city {
+  font-weight: 700;
+  text-align: right;
+}
+.day-time {
+  text-align: right;
+}
+.weather-description {
+  text-align: right;
+  padding-top: 0;
+  margin-top: 0;
+}
+.weather {
+  font-weight: 700;
+  justify-content: space-evenly;
+  margin-left: 3rem;
 }
