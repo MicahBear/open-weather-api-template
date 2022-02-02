@@ -1,12 +1,6 @@
 body {
   font-family: arial, sans-serif;
 }
-h1 {
-  color: #135513;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-}
 ul {
   margin: 0;
   padding: 0;
@@ -19,7 +13,6 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
-  text-align: left;
 }
 .main-border {
   max-width: 700px;
@@ -38,6 +31,16 @@ li {
   text-align: right;
   padding-top: 0;
   margin-top: 0;
+}
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.display-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
 .weather {
   font-weight: 700;
