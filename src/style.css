@@ -37,6 +37,9 @@ li {
   display: table;
   clear: both;
 }
+.main-temp {
+  font-weight: 700;
+}
 .display-temperature img {
   margin-right: 5px;
   height: 64px;
