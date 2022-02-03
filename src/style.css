@@ -38,12 +38,20 @@ li {
   clear: both;
 }
 .main-temp {
-  font-weight: 700;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: normal;
 }
 .display-temperature img {
   margin-right: 5px;
   height: 64px;
   width: 64px;
+}
+.display-temperature .forc {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
 .weather {
   font-weight: 700;
