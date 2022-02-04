@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
 
@@ -22,6 +23,7 @@
           <div class="col-md-6">
             <div class="input-group mb-3">
               <!-- added in lg after form control to shorten input field -->
+
               <input
                 type="text"
                 class="form-control"
@@ -38,9 +40,9 @@
             </div>
           </div>
           <div class="col-md-6">
-            <h4 class="display-city">Long Beach, Ca</h4>
+            <h4 class="display-city"></h4>
             <p class="day-time">Monday 9:00pm</p>
-            <p class="weather-description">Cloudy with a chance of meatballs</p>
+            <p class="weather-description"></p>
           </div>
         </div>
         <div class="row">
@@ -54,7 +56,7 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <span class="main-temp">36</span
+                  <span class="main-temp"></span
                   ><span class="forc">°F|<a href="">°C</a></span>
                 </div>
               </div>
@@ -62,8 +64,8 @@
           </div>
           <div class="col-sm-6">
             <ul>
-              <li class="precipitation">Precipitation:</li>
-              <li class="humidity">Humidity:</li>
+              <li>Wind:<span class="wind"></span></li>
+              <li>Humidity:<span class="humidity"></span></li>
             </ul>
           </div>
         </div>
