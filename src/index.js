@@ -30,7 +30,9 @@ function displayTemp(response) {
     let windInfo = document.querySelector(".wind");
     let dateInfo = document.querySelector("#timedisplay");
     let iconElement = document.querySelector("#icon");
-    tempDisplay.innerHTML = Math.round(response.data.main.temp);
+    fahrenheitInfo = response.data.main.temp;
+
+    tempDisplay.innerHTML = Math.round(fahrenheitInfo);
     cityDisplay.innerHTML = response.data.name;
     weatherDescription.innerHTML = response.data.weather[0].description;
     humidityInfo.innerHTML = response.data.main.humidity;
@@ -56,6 +58,29 @@ function handleSubmit(event) {
     search(searchValue.value);
 }
 
-search("medford");
+function celsiusFormula(event) {
+    event.preventDefault();
+
+    let celsiusConversion = (fahrenheitInfo - 32) * 5 / 9
+    let tempDisplay = document.querySelector(".main-temp")
+    tempDisplay.innerHTML = Math.round(celsiusConversion);
+}
+function fahrenheitFormula(event) {
+    event.preventDefault();
+    let tempDisplay = document.querySelector(".main-temp")
+    tempDisplay.innerHTML = Math.round(fahrenheitInfo);
+
+}
+
+let fahrenheitInfo = null;
+
 let form = document.querySelector(".search");
 form.addEventListener("submit", handleSubmit);
+
+let celsiusHandle = document.querySelector(".celsius");
+celsiusHandle.addEventListener("click", celsiusFormula)
+
+let fahrenheitHandle = document.querySelector(".fahrenheit");
+fahrenheitHandle.addEventListener("click", fahrenheitFormula)
+
+search("medford");
