@@ -19,32 +19,36 @@
   <body>
     <div class="container">
       <div class="shadow-sm p-3 mb-5 bg-body rounded main-border">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="input-group mb-3">
-              <!-- added in lg after form control to shorten input field -->
+        <form class="search">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group mb-3">
+                <!-- added in lg after form control to shorten input field -->
 
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Enter City"
-                aria-describedby="button-addon2"
-              />
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-              >
-                Search
-              </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search-input"
+                  placeholder="Enter City"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  value="search"
+                  id="button-addon2"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 id="displayCity"></h4>
+              <p id="timedisplay"></p>
+              <p class="weather-description"></p>
             </div>
           </div>
-          <div class="col-md-6">
-            <h4 class="display-city"></h4>
-            <p class="day-time"></p>
-            <p class="weather-description"></p>
-          </div>
-        </div>
+        </form>
         <div class="row">
           <div class="col-sm-6">
             <div class="display-temperature">
@@ -64,15 +68,15 @@
           </div>
           <div class="col-sm-6">
             <ul>
-              <li>Wind:<span class="wind">mph</span></li>
-              <li>Humidity:<span class="humidity">%</span></li>
+              <li>Wind:<span class="wind"></span>mph</li>
+              <li>Humidity: <span class="humidity"></span>%</li>
             </ul>
           </div>
         </div>
         <div class="container weather">
           <div class="row">
             <div class="col-md-2 g-2">
-              <p>Monday</p>
+              <p id="monday"></p>
               <img src="" alt="" />
             </div>
             <div class="col-md-2 g-2">
