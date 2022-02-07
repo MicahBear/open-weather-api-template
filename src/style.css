@@ -59,3 +59,8 @@ li {
   justify-content: space-evenly;
   margin-left: 2%;
 }
+.open {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
