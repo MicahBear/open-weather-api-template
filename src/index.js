@@ -140,4 +140,4 @@ celsiusHandle.addEventListener("click", celsiusFormula)
 let fahrenheitHandle = document.querySelector(".fahrenheit");
 fahrenheitHandle.addEventListener("click", fahrenheitFormula)
 
-search("medford");
+search("San Francisco");
