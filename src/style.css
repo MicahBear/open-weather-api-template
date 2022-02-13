@@ -58,6 +58,19 @@ li {
   font-weight: 700;
   justify-content: space-evenly;
   margin-left: 2%;
+  margin-top: 20px;
+}
+.day-display {
+  text-align: center;
+}
+
+.temp-min {
+  opacity: 0.5;
+}
+.temp-max,
+.temp-min {
+  color: brown;
+  font-size: 13px;
 }
 .open {
   display: block;
