@@ -22,6 +22,31 @@ function timeDisplay(timestamp) {
     return `${day} ${hours}:${minutes}`;
 }
 
+function displayForcast() {
+    let weatherCast = document.querySelector("#weather-cast");
+
+    let castHTML = `<div class="row">`;
+    let days = [" Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    days.forEach(function (day) {
+
+        castHTML = castHTML + `
+                   <div class="col-md-2 g-2 day-display">
+              <p id="monday">${day}</p>
+              <img src="" alt="" />
+              <span class="temp-max">22°</span>
+              <span class="temp-min">12°</span>
+            </div>
+                `;
+    })
+
+
+
+
+    castHTML = castHTML + `</div>`;
+    weatherCast.innerHTML = castHTML;
+
+}
+
 function displayTemp(response) {
     let tempDisplay = document.querySelector(".main-temp");
     let cityDisplay = document.querySelector("#displayCity");
@@ -31,6 +56,8 @@ function displayTemp(response) {
     let dateInfo = document.querySelector("#timedisplay");
     let iconElement = document.querySelector("#icon");
     fahrenheitInfo = response.data.main.temp;
+
+    displayForcast();
 
     tempDisplay.innerHTML = Math.round(fahrenheitInfo);
     cityDisplay.innerHTML = response.data.name;
